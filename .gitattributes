@@ -1,2 +1,22 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Normalize all text files to use LF line endings
+* text=auto eol=lf
+
+# Treat web source files as text and enable readable diffs
+*.html text diff=html linguist-language=HTML
+*.css  text diff=css  linguist-language=CSS
+*.js   text diff=javascript linguist-language=JavaScript
+*.ts   text diff=javascript linguist-language=TypeScript
+
+# Mark common image assets as binary so Git won't try to diff them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+
+# Exclude helper/metadata files from exported archives
+README.md export-ignore
+LICENSE   export-ignore
