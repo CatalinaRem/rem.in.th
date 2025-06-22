@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The website of Catalina Rem | rem.in.th</title>
     <!-- Main Font is FC Iconic -->
+    <link rel="stylesheet" href="/assets/fonts/fcIconic/fciconic.css">
+    <link rel="stylesheet" href="/assets/fonts/fcIconicText/fciconictext.css">
+    <link rel="stylesheet" href="/assets/fonts/fcIconicRounded/fciconicrounded.css">
     <!-- Favicons -->
     <!-- Vendor CSS Files -->
     <!-- Main CSS File -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Dark Mode CSS -->
+    <!-- Type Writer CSS -->
+    <!-- Responsive CSS -->
+    <!-- Icons -->
 
 </head>
 
@@ -17,6 +25,10 @@
         <h1>Catalina Rem</h1>
         <div>dreamplay's Producer</div>
         <!-- Using a Type Writer CSS -->
+        <label for="darkmode" class="darkmode">
+            <input type="checkbox" id="toggle">
+        </label>
+
     </header>
 
     <nav>
@@ -30,13 +42,16 @@
     </nav>
 
     <main>
-        <!-- Using a Type Writer CSS -->
-        <!-- Next dream is ... > Catalina Rem > dreamplay > Next dream is ... -->
-        <p>Next dream is ...</p>
-        <img src="" alt="">
+        <div class="hero">
+            <!-- Using a Type Writer CSS -->
+            <!-- Next dream is ... > Catalina Rem > dreamplay > Next dream is ... -->
+            <p>Next dream is ...</p>
+            <img src="/assets/img/IMG_3519.jpg" alt="">
+        </div>
     </main>
     <!-- About Me -->
-    <section id="about">
+    <section class="about" id="about">
+        <img src="/assets/img/DSC09612.jpg" alt="Catalina Rem">
         <h2 lang="en">Catalina Rem</h2>
         <h3 lang="ja">カタリナ・レム</h3>
         <p>
@@ -60,20 +75,22 @@
     </section>
     <!-- Quote -->
     <blockquote>
-        "Dream have no limits."
+        "Dream have no limits."<br>
         <cite>Catalina Rem</cite>
     </blockquote>
     <!-- My Projects -->
-    <section>
+    <section class="projects" id="projects">
         <h2>Projects</h2>
         <h3>dreamplay</h3>
         <p>
+            <img src="/assets/img/dreamplayEP2.png" alt="dreamoplay Episode 2">
             <strong>dreamplay</strong> is a media project that combines pop culture, humor, and creativity. It serves as
             a platform for various forms of media, including articles, videos,
             and interactive content, all designed to entertain and engage audiences.
         </p>
         <h3>TransitDreamin</h3>
         <p>
+            <img src="/assets/img/IMG_5321.jpg" alt="">
             <strong>TransitDreamin</strong> is an innovative project that explores the intersection of transportation
             and
             dreams. It aims to create immersive experiences that transport users to dreamlike environments, using
@@ -81,6 +98,7 @@
         </p>
         <h3>Mahou Ran App (iOS App)</h3>
         <p>
+            <img src="/assets/img/IMG_5843.jpeg" alt="">
             <strong>Mahou Ran</strong> is a concept cafè in Thailand, this a witch themed cafè that offers a unique
             experience for visitors. The app serves as a digital companion, providing information about the cafè,
             including menu items, events, and special promotions. It also features interactive elements that enhance
@@ -88,49 +106,52 @@
     </section>
 
     <!-- Contact Me -->
-    <h3>
-        Contact
-    </h3>
-    <div>
-        <h4>
-            For Business Inquiries:
-        </h4>
-        <p>
-            <a href="mailto:catalina.rem@outlook.com">catalina.rem@outlook.com</a>
-        </p>
-        <h4>
-            For Community Inquiries:
-        </h4>
-        <p>
-            <a href="">Dreamplay Café Discord</a><br>
-            <a href="https://github.com/CatalinaRem/">Catalina Rem's GitHub</a>
-        </p>
-    </div>
+    <div class="contact" id="contact">
+        <img src="/assets/img/IMG_5602.jpg" alt="Contact Me">
+        <h3>
+            Contact
+        </h3>
+        <div>
+            <h4>
+                For Business Inquiries:
+            </h4>
+            <p>
+                <a href="mailto:catalina.rem@outlook.com">catalina.rem@outlook.com</a>
+            </p>
+            <h4>
+                For Community Inquiries:
+            </h4>
+            <p>
+                <a href="">Dreamplay Café Discord</a><br>
+                <a href="https://github.com/CatalinaRem/">Catalina Rem's GitHub</a>
+            </p>
+        </div>
 
-    <!-- Contact Box -->
-    <form action="#">
-        <div>
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required>
-        </div>
-        <div>
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </div>
-        <div>
-            <label for="Title">Title</label>
-            <input type="text" id="Title" name="Title" required>
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        <!-- Contact Box -->
+        <form action="#">
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send to Rem</button>
+        </form>
     </div>
-    <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-    </div>
-    <button type="submit">Send to Rem</button>
-    </form>
 
     <footer>
         <p>&copy; 2025 Catalina Rem. All rights reserved.</p>

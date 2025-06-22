@@ -101,3 +101,5 @@ $RECYCLE.BIN/
 *.sqlite3
 # VSCode settings export
 *.code-workspace
+assets/fonts/**/*
+assets/img/**/*
