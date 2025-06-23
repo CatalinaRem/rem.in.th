@@ -3,15 +3,6 @@
 @import url('/assets/fonts/fcIconicRounded/fciconicrounded.css');
 @import url('/assets/fonts/fcIconicText/fciconictext.css');
 
-@font-face {
-  font-family: 'FC Iconic';
-  src: url(/assets/fonts/fcIconic/FCIconic-Regular.woff2) format('woff2'),
-       local('FC Iconic Regular');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
-    font-family: 'FC Iconic', sans-serif;
+  font-family: 'FC Iconic', 'FC Iconic Rounded', 'FC Iconic Text', sans-serif;
 }
