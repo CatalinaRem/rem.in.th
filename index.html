@@ -13,21 +13,24 @@
     <!-- Vendor CSS Files -->
     <!-- Main CSS File -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
     <!-- Dark Mode CSS -->
-    <!-- Type Writer CSS -->
-    <!-- Responsive CSS -->
     <!-- Icons -->
 
 </head>
 
 <body>
     <header>
-        <h1>Catalina Rem</h1>
-        <div>dreamplay's Producer</div>
+        <div>
+        <h1 class="title-name">Catalina Rem</h1>
+        <div class="subtitle">dreamplay's Producer</div>
         <!-- Using a Type Writer CSS -->
-        <label for="darkmode" class="darkmode">
-            <input type="checkbox" id="toggle">
-        </label>
+
+        <!-- Toggle to Darkmode -->
+        <div class="toggle-box">
+            <input type="checkbox" id="check">
+            <label for="check" class="button"></label>
+        </div>
 
     </header>
 
